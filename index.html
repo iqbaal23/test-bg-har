@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Bio Profesional</title>
+    <!-- Tailwind CSS via CDN untuk fast loading -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom styles untuk optimasi */
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Animasi sederhana */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        
+        /* Efek hover untuk link */
+        .link-card {
+            transition: all 0.3s ease;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Optimasi gambar */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    
+    <!-- Konfigurasi Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-b from-gray-50 to-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-3xl">
+        
+        <!-- Header dengan profil -->
+        <header class="text-center mb-12 fade-in">
+            <div class="relative inline-block mb-6">
+                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg mx-auto">
+                    <img 
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
+                        alt="Foto Profil"
+                        loading="lazy"
+                        class="w-full h-full object-cover"
+                    >
+                </div>
+                <div class="absolute bottom-2 right-2 bg-green-500 w-6 h-6 rounded-full border-2 border-white"></div>
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Ahmad Rahman</h1>
+            <p class="text-lg text-gray-600 mb-4">Digital Marketer & Content Creator</p>
+            <p class="text-gray-500 max-w-xl mx-auto">
+                Saya membantu bisnis tumbuh melalui strategi digital marketing yang efektif. 
+                Mari berkolaborasi untuk mencapai tujuan Anda!
+            </p>
+            
+            <!-- Statistik -->
+            <div class="flex justify-center space-x-8 mt-6">
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-primary">5K+</div>
+                    <div class="text-sm text-gray-500">Pengikut</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-secondary">150+</div>
+                    <div class="text-sm text-gray-500">Klien</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-primary">8+</div>
+                    <div class="text-sm text-gray-500">Tahun Pengalaman</div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Link Utama -->
+        <main class="space-y-4 mb-12">
+            <div class="fade-in" style="animation-delay: 0.1s">
+                <a href="https://portfolio.example.com" target="_blank" class="block">
+                    <div class="link-card bg-white rounded-xl p-5 shadow-md border border-gray-200 hover:border-primary">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-briefcase text-blue-600 text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Portfolio & Projek</h3>
+                                <p class="text-sm text-gray-500">Lihat karya dan projek terbaru saya</p>
+                            </div>
+                            <div class="text-gray-400">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="fade-in" style="animation-delay: 0.2s">
+                <a href="https://calendly.com/ahmad-rahman" target="_blank" class="block">
+                    <div class="link-card bg-white rounded-xl p-5 shadow-md border border-gray-200 hover:border-green-500">
+                        <div class="flex items-center">
+                            <div class="bg-green-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-calendar-check text-green-600 text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Jadwalkan Konsultasi</h3>
+                                <p class="text-sm text-gray-500">Booking sesi konsultasi gratis 30 menit</p>
+                            </div>
+                            <div class="text-gray-400">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="fade-in" style="animation-delay: 0.3s">
+                <a href="https://blog.example.com" target="_blank" class="block">
+                    <div class="link-card bg-white rounded-xl p-5 shadow-md border border-gray-200 hover:border-purple-500">
+                        <div class="flex items-center">
+                            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-blog text-purple-600 text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Blog & Artikel</h3>
+                                <p class="text-sm text-gray-500">Tips dan insight tentang digital marketing</p>
+                            </div>
+                            <div class="text-gray-400">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="fade-in" style="animation-delay: 0.4s">
+                <a href="https://resources.example.com/ebook" target="_blank" class="block">
+                    <div class="link-card bg-white rounded-xl p-5 shadow-md border border-gray-200 hover:border-yellow-500">
+                        <div class="flex items-center">
+                            <div class="bg-yellow-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-book-open text-yellow-600 text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Ebook Gratis</h3>
+                                <p class="text-sm text-gray-500">Download panduan digital marketing untuk pemula</p>
+                            </div>
+                            <div class="text-gray-400">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="fade-in" style="animation-delay: 0.5s">
+                <a href="mailto:ahmad@example.com" class="block">
+                    <div class="link-card bg-white rounded-xl p-5 shadow-md border border-gray-200 hover:border-red-500">
+                        <div class="flex items-center">
+                            <div class="bg-red-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-envelope text-red-600 text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Email Profesional</h3>
+                                <p class="text-sm text-gray-500">Hubungi saya untuk kerja sama</p>
+                            </div>
+                            <div class="text-gray-400">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </main>
+        
+        <!-- Media Sosial -->
+        <section class="mb-12 fade-in" style="animation-delay: 0.6s">
+            <h2 class="text-xl font-semibold text-gray-800 mb-6 text-center">Ikuti Saya di Media Sosial</h2>
+            <div class="flex justify-center space-x-4">
+                <a href="https://instagram.com" target="_blank" class="bg-pink-600 text-white p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-pink-700 transition shadow-md">
+                    <i class="fab fa-instagram text-lg"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="bg-blue-700 text-white p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-blue-800 transition shadow-md">
+                    <i class="fab fa-linkedin-in text-lg"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="bg-red-600 text-white p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-red-700 transition shadow-md">
+                    <i class="fab fa-youtube text-lg"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="bg-blue-400 text-white p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-blue-500 transition shadow-md">
+                    <i class="fab fa-twitter text-lg"></i>
+                </a>
+                <a href="https://tiktok.com" target="_blank" class="bg-black text-white p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-800 transition shadow-md">
+                    <i class="fab fa-tiktok text-lg"></i>
+                </a>
+            </div>
+        </section>
+        
+        <!-- CTA Newsletter -->
+        <section class="bg-gradient-to-r from-primary to-blue-500 rounded-2xl p-6 shadow-lg mb-10 fade-in" style="animation-delay: 0.7s">
+            <div class="text-center text-white">
+                <h3 class="text-xl font-bold mb-2">Tetap Terhubung</h3>
+                <p class="mb-4 opacity-90">Dapatkan tips digital marketing mingguan langsung di inbox Anda</p>
+                
+                <form id="newsletterForm" class="max-w-md mx-auto">
+                    <div class="flex flex-col sm:flex-row gap-2">
+                        <input 
+                            type="email" 
+                            placeholder="Masukkan email Anda" 
+                            required
+                            class="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                        >
+                        <button 
+                            type="submit"
+                            class="bg-white text-primary font-semibold px-5 py-3 rounded-lg hover:bg-gray-100 transition"
+                        >
+                            Berlangganan
+                        </button>
+                    </div>
+                    <p class="text-xs mt-3 opacity-80">Dengan berlangganan, Anda menyetujui kebijakan privasi kami.</p>
+                </form>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 text-sm pt-6 border-t border-gray-200 fade-in" style="animation-delay: 0.8s">
+            <p class="mb-2">© 2023 Ahmad Rahman. All rights reserved.</p>
+            <p class="mb-4">
+                <a href="#" class="hover:text-primary transition">Kebijakan Privasi</a> 
+                | 
+                <a href="#" class="hover:text-primary transition">Syarat Layanan</a>
+            </p>
+            <p class="text-xs">Halaman ini dibuat dengan <i class="fas fa-heart text-red-500"></i> menggunakan Tailwind CSS</p>
+        </footer>
+    </div>
+    
+    <!-- JavaScript sederhana untuk interaksi -->
+    <script>
+        // Form submission untuk newsletter
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            
+            // Simulasi pengiriman form
+            alert(`Terima kasih! Email ${email} telah berhasil didaftarkan untuk newsletter.`);
+            this.reset();
+        });
+        
+        // Efek animasi saat scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            fadeElements.forEach(el => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(10px)';
+                el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
